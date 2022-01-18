@@ -120,6 +120,12 @@ h1, h2, h3, h4 {
     margin-top: 4rem;
 }
 
+.parrafoPatrimonio{
+    line-height: 2rem;
+    text-align: justify;
+    font-weight: bold;
+}
+
 /** footer */
 .footer {
     display: flex;
@@ -131,8 +137,10 @@ h1, h2, h3, h4 {
     font-size: large;
     height: 10rem;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);}
-.parrafoPatrimonio{
-    line-height: 2rem;
-    text-align: justify;
-    font-weight: bold;
-}
+
+    @media (max-width: 480px) {
+        .footer{
+          align-items: flex-end;
+        }
+    }
+
