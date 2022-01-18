@@ -1,0 +1,138 @@
+html {
+    /* para hacer que el ancho del box no afecte nuestros elementos */
+    box-sizing: border-box;
+    /* para que un rem sea igual a 10px */
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(224, 198, 198);
+    font-family: monospace;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+ul li, li, ul {
+    margin: 0;
+    padding: 0;
+}
+li{
+    text-align: center;
+}
+img {
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+
+img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #fdb9c8, 0 0 25px #fdb9c8, 0 0 50px #fdb9c8, 0 0 200px #fdb9c8;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* estilos clases */
+.h1:hover {
+    box-shadow: 2px 5px 5px #cf2f52;
+    border-radius: 90%;
+    color: #cf2f52;
+}
+
+.contenedor {
+
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.main {
+    flex: 1;
+}
+
+.listaFotos li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.listaFotos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 480px) {
+    .listaFotos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    .imagen {
+        margin: 2rem;
+        width: 95%;
+    }
+}
+
+.listaFotos li a:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background: #ff96ad;
+    border-radius: 25%;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imagen {
+    margin-top: 4rem;
+}
+
+/** footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #cf2f52;
+    font-weight: bold;
+    font-size: large;
+    height: 10rem;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);}
+.parrafoPatrimonio{
+    line-height: 2rem;
+    text-align: justify;
+    font-weight: bold;
+}
